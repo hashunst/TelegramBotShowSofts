@@ -28,7 +28,7 @@ Route::any('/test', function (){
 
         $text = Telegram::commandsHandler(true);
     Telegram::sendMessage([
-                'text' => 'hi',
+                'text' => 'bye',
                 'chat_id' => '146541735'
             ]);
 //        if(!empty($text)){
