@@ -1,22 +1,22 @@
 <?php
 
-namespace App\EqtedarCommands;
+namespace App\BotCommands;
 
 use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;
 use Telegram\Bot\Laravel\Facades\Telegram;
 
-class SalamCommand extends Command
+class DoreCommand extends Command
 {
     /**
      * @var string Command Name
      */
-    protected $name = "salam";
+    protected $name = "dore";
 
     /**
      * @var string Command Description
      */
-    protected $description = "salam Command to response you best hello";
+    protected $description = "dore Command to response you list amo in dore";
 
     /**
      * @inheritdoc
@@ -33,6 +33,7 @@ class SalamCommand extends Command
 //            'photo' => resource_path('download.png'),
 //            'caption' => '@eqtedarmeli'
 //        ]);
+
 
         $this->replyWithMessage(['text' => "args: " . $arguments]);
 //        $this->replyWithMessage(['text' => "id: " . $this->update->getMessage()->getChat()->getId()]);

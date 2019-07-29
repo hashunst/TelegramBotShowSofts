@@ -1,6 +1,6 @@
 <?php
 
-namespace App\EqtedarCommands;
+namespace App\BotCommands;
 
 use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;

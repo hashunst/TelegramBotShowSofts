@@ -11,7 +11,7 @@
 |
 */
 
-use App\EqtedarCommands\StartCommand;
+use App\BotCommands\StartCommand;
 use Illuminate\Support\Facades\Route;
 use Telegram\Bot\Api;
 use Telegram\Bot\Commands\HelpCommand;
@@ -25,8 +25,12 @@ Route::any('/test', function (){
 //    Telegram::sendPhoto(['chat_id' => '146541735', 'photo' => resource_path('download.png')]);
 //    file_put_contents(public_path('has'), 'has');
 
-        $text = Telegram::commandsHandler(true)->getMessage()->getText();
 
+        $text = Telegram::commandsHandler(true);
+    Telegram::sendMessage([
+                'text' => 'hi',
+                'chat_id' => '146541735'
+            ]);
 //        if(!empty($text)){
 //            Telegram::sendMessage([
 //                'text' => $text,
